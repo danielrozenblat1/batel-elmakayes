@@ -45,7 +45,7 @@ const WhoIsFit = () => {
   return (
     <div className={styles.whoIsFitContainer}>
       <div className={styles.header}>
-        <h1 className={styles.mainTitle}>הקורס מתאים למי ש...</h1>
+        <h1 className={styles.mainTitle}>שניה לפני שאנחנו מדברות <br/> הקורס שלי מתאים למי ש...</h1>
       </div>
 
       <div className={styles.itemsContainer}>

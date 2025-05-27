@@ -1,0 +1,952 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  font-family: 'AssistantR', Arial, sans-serif;
+  direction: rtl;
+  position: relative;
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 20% 80%, rgba(195, 147, 85, 0.03) 0%, transparent 60%),
+    radial-gradient(circle at 80% 20%, rgba(232, 201, 169, 0.05) 0%, transparent 60%),
+    radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 40%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #8b6d47;
+  margin-bottom: 3rem;
+  text-shadow: 0 2px 4px rgba(255, 255, 255, 0.8), 0 4px 8px rgba(195, 147, 85, 0.2);
+  background: linear-gradient(135deg, #8b6d47, #c39355, #8b6d47);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-family: 'AssistantR', Arial, sans-serif;
+  position: relative;
+  z-index: 1;
+}
+
+.featuresGrid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  position: relative;
+  z-index: 1;
+  margin-bottom: 3rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.featureCard {
+  background: rgba(232, 201, 169, 0.12);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  border-radius: 25px;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 20px 60px rgba(195, 147, 85, 0.06), 0 8px 25px rgba(0, 0, 0, 0.02);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.featureCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), transparent);
+  border-radius: 25px 25px 0 0;
+}
+
+.iconContainer {
+  padding: 1.2rem;
+  background: rgba(232, 201, 169, 0.3);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 8px 20px rgba(195, 147, 85, 0.12);
+  margin-bottom: 1.5rem;
+}
+
+.featureIcon {
+  width: 24px;
+  height: 24px;
+  color: #8b6d47;
+  filter: drop-shadow(0 2px 4px rgba(255, 255, 255, 0.8));
+}
+
+.featureTitle {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #8b6d47;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 4px rgba(255, 255, 255, 0.6);
+  font-family: 'Assistant', Arial, sans-serif;
+}
+
+.featureDescription {
+  color: #8b6d47;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  font-weight: 500;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.4);
+  font-family: 'AssistantR', Arial, sans-serif;
+}
+
+.kitSection {
+  margin-top: 3rem;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.kitCard {
+  background: rgba(232, 201, 169, 0.15);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  border-radius: 30px;
+  padding: 2.5rem 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 30px 80px rgba(195, 147, 85, 0.08), 0 12px 35px rgba(0, 0, 0, 0.04);
+  position: relative;
+  overflow: hidden;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.kitCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), transparent);
+  border-radius: 30px 30px 0 0;
+}
+
+.kitIconContainer {
+  padding: 1.8rem;
+  background: rgba(232, 201, 169, 0.3);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 12px 30px rgba(195, 147, 85, 0.15);
+  margin-bottom: 1.5rem;
+}
+
+.kitIcon {
+  width: 28px;
+  height: 28px;
+  color: #8b6d47;
+  filter: drop-shadow(0 2px 4px rgba(255, 255, 255, 0.8));
+}
+
+.kitTitle {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #8b6d47;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 2px 4px rgba(255, 255, 255, 0.6);
+  font-family: 'Assistant', Arial, sans-serif;
+}
+
+.kitDescription {
+  color: #8b6d47;
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: 500;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.4);
+  font-family: 'AssistantR', Arial, sans-serif;
+  margin-bottom: 2rem;
+}
+
+.imagesGrid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.imageCard {
+  background: rgba(232, 201, 169, 0.15);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  border-radius: 20px;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 15px 40px rgba(195, 147, 85, 0.06), 0 6px 20px rgba(0, 0, 0, 0.02);
+  position: relative;
+  overflow: hidden;
+}
+
+.imageCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), transparent);
+  border-radius: 20px 20px 0 0;
+}
+
+.imagePlaceholder {
+  width: 100%;
+  aspect-ratio: 1;
+  background: rgba(232, 201, 169, 0.2);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: inset 0 4px 12px rgba(195, 147, 85, 0.1);
+}
+
+.placeholderIcon {
+  width: 32px;
+  height: 32px;
+  color: #8b6d47;
+  opacity: 0.6;
+  filter: drop-shadow(0 2px 4px rgba(255, 255, 255, 0.5));
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.featuresGrid {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.kitSection {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+/* Responsive Breakpoints */
+
+/* מתחת ל-350px */
+@media (max-width: 349px) {
+  .container {
+    padding: 1rem 0.5rem;
+  }
+  
+  .title {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .featuresGrid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    max-width: 280px;
+    margin-bottom: 2rem;
+  }
+  
+  .featureCard {
+    padding: 1rem;
+  }
+  
+  .featureTitle {
+    font-size: 1rem;
+  }
+  
+  .featureDescription {
+    font-size: 0.8rem;
+  }
+  
+  .imagesGrid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    max-width: 250px;
+  }
+  
+  .imageCard {
+    padding: 1rem;
+  }
+  
+  .kitCard {
+    padding: 1.5rem 1rem;
+    max-width: 280px;
+  }
+  
+  .kitTitle {
+    font-size: 1.2rem;
+  }
+  
+  .kitDescription {
+    font-size: 0.85rem;
+  }
+  
+  .iconContainer, .kitIconContainer {
+    padding: 0.8rem;
+  }
+  
+  .featureIcon {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .kitIcon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* 350-450px */
+@media (min-width: 350px) and (max-width: 450px) {
+  .container {
+    padding: 1.2rem 0.8rem;
+  }
+  
+  .title {
+    font-size: 1.4rem;
+    margin-bottom: 1.8rem;
+  }
+  
+  .featuresGrid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+    max-width: 320px;
+    margin-bottom: 2.2rem;
+  }
+  
+  .featureCard {
+    padding: 1.2rem;
+  }
+  
+  .featureTitle {
+    font-size: 1.1rem;
+  }
+  
+  .featureDescription {
+    font-size: 0.85rem;
+  }
+  
+  .imagesGrid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+    max-width: 280px;
+  }
+  
+  .imageCard {
+    padding: 1.2rem;
+  }
+  
+  .kitCard {
+    padding: 1.8rem 1.2rem;
+    max-width: 320px;
+  }
+  
+  .kitTitle {
+    font-size: 1.3rem;
+  }
+  
+  .kitDescription {
+    font-size: 0.9rem;
+  }
+  
+  .iconContainer, .kitIconContainer {
+    padding: 1rem;
+  }
+  
+  .featureIcon {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .kitIcon {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+/* 450-550px */
+@media (min-width: 450px) and (max-width: 550px) {
+  .container {
+    padding: 1.5rem 1rem;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .featuresGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    max-width: 380px;
+    margin-bottom: 2.5rem;
+  }
+  
+  .featureCard {
+    padding: 1.5rem;
+  }
+  
+  .featureTitle {
+    font-size: 1.2rem;
+  }
+  
+  .featureDescription {
+    font-size: 0.9rem;
+  }
+  
+  .imagesGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.3rem;
+    max-width: 350px;
+  }
+  
+  .imageCard {
+    padding: 1.3rem;
+  }
+  
+  .kitCard {
+    padding: 2rem 1.5rem;
+    max-width: 380px;
+  }
+  
+  .kitTitle {
+    font-size: 1.4rem;
+  }
+  
+  .kitDescription {
+    font-size: 0.95rem;
+  }
+  
+  .iconContainer, .kitIconContainer {
+    padding: 1.1rem;
+  }
+  
+  .featureIcon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .kitIcon {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+/* 550-650px */
+@media (min-width: 550px) and (max-width: 650px) {
+  .container {
+    padding: 1.8rem 1.2rem;
+  }
+  
+  .title {
+    font-size: 1.6rem;
+    margin-bottom: 2.2rem;
+  }
+  
+  .featuresGrid {
+    grid-template-columns: 1fr;
+    gap: 1.8rem;
+    max-width: 450px;
+    margin-bottom: 2.8rem;
+  }
+  
+  .featureCard {
+    padding: 1.8rem;
+  }
+  
+  .featureTitle {
+    font-size: 1.25rem;
+  }
+  
+  .featureDescription {
+    font-size: 0.92rem;
+  }
+  
+  .imagesGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    max-width: 420px;
+  }
+  
+  .imageCard {
+    padding: 1.4rem;
+  }
+  
+  .kitCard {
+    padding: 2.2rem 1.8rem;
+    max-width: 450px;
+  }
+  
+  .kitTitle {
+    font-size: 1.5rem;
+  }
+  
+  .kitDescription {
+    font-size: 0.98rem;
+  }
+  
+  .iconContainer, .kitIconContainer {
+    padding: 1.15rem;
+  }
+  
+  .featureIcon {
+    width: 21px;
+    height: 21px;
+  }
+  
+  .kitIcon {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+/* 650-750px */
+@media (min-width: 650px) and (max-width: 750px) {
+  .container {
+    padding: 2rem 1.5rem;
+  }
+  
+  .title {
+    font-size: 1.7rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  .featuresGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 550px;
+    margin-bottom: 3rem;
+  }
+  
+  .featureCard {
+    padding: 1.8rem;
+  }
+  
+  .featureTitle {
+    font-size: 1.3rem;
+  }
+  
+  .featureDescription {
+    font-size: 0.93rem;
+  }
+  
+  .imagesGrid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
+    max-width: 500px;
+  }
+  
+  .imageCard {
+    padding: 1.4rem;
+  }
+  
+  .kitCard {
+    padding: 2.3rem 2rem;
+    max-width: 550px;
+  }
+  
+  .kitTitle {
+    font-size: 1.6rem;
+  }
+  
+  .kitDescription {
+    font-size: 1rem;
+  }
+  
+  .iconContainer, .kitIconContainer {
+    padding: 1.2rem;
+  }
+  
+  .featureIcon {
+    width: 22px;
+    height: 22px;
+  }
+  
+  .kitIcon {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+/* 750-850px */
+@media (min-width: 750px) and (max-width: 850px) {
+  .container {
+    padding: 2.2rem 1.8rem;
+  }
+  
+  .title {
+    font-size: 1.8rem;
+    margin-bottom: 2.7rem;
+  }
+  
+  .featuresGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 600px;
+    margin-bottom: 3rem;
+  }
+  
+  .featureCard {
+    padding: 1.9rem;
+  }
+  
+  .featureTitle {
+    font-size: 1.32rem;
+  }
+  
+  .featureDescription {
+    font-size: 0.94rem;
+  }
+  
+  .imagesGrid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.7rem;
+    max-width: 600px;
+  }
+  
+  .imageCard {
+    padding: 1.45rem;
+  }
+  
+  .kitCard {
+    padding: 2.4rem 2.1rem;
+    max-width: 600px;
+  }
+  
+  .kitTitle {
+    font-size: 1.65rem;
+  }
+  
+  .kitDescription {
+    font-size: 1rem;
+  }
+  
+  .iconContainer, .kitIconContainer {
+    padding: 1.25rem;
+  }
+  
+  .featureIcon {
+    width: 23px;
+    height: 23px;
+  }
+  
+  .kitIcon {
+    width: 27px;
+    height: 27px;
+  }
+}
+
+/* 850-950px */
+@media (min-width: 850px) and (max-width: 950px) {
+  .container {
+    padding: 2.5rem 2rem;
+  }
+  
+  .title {
+    font-size: 1.9rem;
+    margin-bottom: 2.8rem;
+  }
+  
+  .featuresGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 650px;
+    margin-bottom: 3rem;
+  }
+  
+  .featureCard {
+    padding: 2rem;
+  }
+  
+  .featureTitle {
+    font-size: 1.35rem;
+  }
+  
+  .featureDescription {
+    font-size: 0.94rem;
+  }
+  
+  .imagesGrid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.8rem;
+    max-width: 700px;
+  }
+  
+  .imageCard {
+    padding: 1.5rem;
+  }
+  
+  .kitCard {
+    padding: 2.5rem 2.2rem;
+    max-width: 650px;
+  }
+  
+  .kitTitle {
+    font-size: 1.7rem;
+  }
+  
+  .kitDescription {
+    font-size: 1rem;
+  }
+  
+  .iconContainer, .kitIconContainer {
+    padding: 1.3rem;
+  }
+  
+  .featureIcon {
+    width: 23px;
+    height: 23px;
+  }
+  
+  .kitIcon {
+    width: 27px;
+    height: 27px;
+  }
+}
+
+/* 950-1050px */
+@media (min-width: 950px) and (max-width: 1050px) {
+  .container {
+    padding: 2.8rem 2rem;
+  }
+  
+  .title {
+    font-size: 2rem;
+    margin-bottom: 2.9rem;
+  }
+  
+  .featuresGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 680px;
+    margin-bottom: 3rem;
+  }
+  
+  .featureCard {
+    padding: 2rem;
+  }
+  
+  .featureTitle {
+    font-size: 1.37rem;
+  }
+  
+  .featureDescription {
+    font-size: 0.95rem;
+  }
+  
+  .imagesGrid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.9rem;
+    max-width: 750px;
+  }
+  
+  .imageCard {
+    padding: 1.5rem;
+  }
+  
+  .kitCard {
+    padding: 2.5rem 2rem;
+    max-width: 700px;
+  }
+  
+  .kitTitle {
+    font-size: 1.75rem;
+  }
+  
+  .kitDescription {
+    font-size: 1rem;
+  }
+  
+  .iconContainer, .kitIconContainer {
+    padding: 1.35rem;
+  }
+  
+  .featureIcon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .kitIcon {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+/* 1050-1150px */
+@media (min-width: 1050px) and (max-width: 1150px) {
+  .container {
+    padding: 3rem 2rem;
+  }
+  
+  .title {
+    font-size: 2.1rem;
+    margin-bottom: 3rem;
+  }
+  
+  .featuresGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 700px;
+    margin-bottom: 3rem;
+  }
+  
+  .featureCard {
+    padding: 2rem;
+  }
+  
+  .featureTitle {
+    font-size: 1.4rem;
+  }
+  
+  .featureDescription {
+    font-size: 0.95rem;
+  }
+  
+  .imagesGrid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 800px;
+  }
+  
+  .imageCard {
+    padding: 1.5rem;
+  }
+  
+  .kitCard {
+    padding: 2.5rem 2rem;
+    max-width: 750px;
+  }
+  
+  .kitTitle {
+    font-size: 1.8rem;
+  }
+  
+  .kitDescription {
+    font-size: 1rem;
+  }
+  
+  .iconContainer, .kitIconContainer {
+    padding: 1.4rem;
+  }
+  
+  .featureIcon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .kitIcon {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+/* 1150-1250px */
+@media (min-width: 1150px) and (max-width: 1250px) {
+  .container {
+    padding: 3rem 2rem;
+  }
+  
+  .title {
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .featuresGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 700px;
+    margin-bottom: 3rem;
+  }
+  
+  .featureCard {
+    padding: 2rem;
+  }
+  
+  .featureTitle {
+    font-size: 1.4rem;
+  }
+  
+  .featureDescription {
+    font-size: 0.95rem;
+  }
+  
+  .imagesGrid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 850px;
+  }
+  
+  .imageCard {
+    padding: 1.5rem;
+  }
+  
+  .kitCard {
+    padding: 2.5rem 2rem;
+    max-width: 800px;
+  }
+  
+  .kitTitle {
+    font-size: 1.8rem;
+  }
+  
+  .kitDescription {
+    font-size: 1rem;
+  }
+  
+  .iconContainer, .kitIconContainer {
+    padding: 1.5rem;
+  }
+  
+  .featureIcon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .kitIcon {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+/* מעל 1250px - הגדרות ברירת מחדל */
+@media (min-width: 1250px) {
+  .imagesGrid {
+    max-width: 900px;
+  }
+  
+  .kitCard {
+    max-width: 800px;
+  }
+}

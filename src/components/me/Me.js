@@ -5,6 +5,7 @@ import bateldictionary from ".././../images/בתאל אלמקייס יומן.png
 import Works from '../recommends/Works';
 import Recommendations from '../recommends/Recommends';
 import Syllabus from '../Sillabus/Sillabus';
+import ThirdScreen from '../../screens/ThirdScreen';
 const AboutMeComponent = () => {
   return (
     <>
@@ -53,7 +54,7 @@ const AboutMeComponent = () => {
        <div className={styles.centeredSubtitle}>אז תחזיקי חזק.. ככה זה הולך לעבוד:</div>
        
           <Syllabus/>
-
+        <ThirdScreen/>
 
   
     </>

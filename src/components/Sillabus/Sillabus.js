@@ -228,11 +228,13 @@ const Syllabus = () => {
                  </div>
                ))}
              </div>
-               <Button text="בתאל אני בפנים!"/>
+            
            </div>
            
          ))}
+         
        </div>
+       
      )}
      
    
