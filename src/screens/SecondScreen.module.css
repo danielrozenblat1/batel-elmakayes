@@ -1,0 +1,345 @@
+/* SecondScreen.module.css */
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 40%;
+    direction: rtl;
+    margin: 2% auto;
+}
+  
+.description {
+    font-family: 'AssistantR', sans-serif;
+    text-align: center;
+    direction: rtl;
+    font-size: 1.4rem;
+    width: 75%;
+    margin: 1% auto;
+}
+
+.markedDescription {
+    position: relative;
+    display: inline-block;
+}
+
+.titleContainer {
+    display: flex;
+    justify-content: center;
+    margin: 2% auto;
+}
+  
+.title {
+    font-family: "Assistant", sans-serif;
+    text-align: center;
+    direction: rtl;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0;
+}
+
+.markedTitle {
+    position: relative;
+    display: inline-block;
+}
+
+.highlight {
+    position: absolute;
+    left: -5px;
+    right: -5px;
+    bottom: 3px;
+    height: 12px;
+    background-color: #f8e5c9;
+    z-index: 1;
+    transform: skew(-12deg) rotate(-1deg);
+    border-radius: 3px;
+    width: 100%;
+}
+
+.animateHighlight {
+    animation: highlight-animation 1s ease-in-out;
+}
+
+@keyframes highlight-animation {
+    0% {
+        opacity: 0.3;
+        transform: skew(-12deg) rotate(-1deg) scaleX(0.97);
+    }
+    50% {
+        opacity: 1;
+        transform: skew(-15deg) rotate(-2deg) scaleX(1.03);
+    }
+    100% {
+        opacity: 1;
+        transform: skew(-12deg) rotate(-1deg) scaleX(1);
+    }
+}
+
+.markedDescription .highlight {
+    height: 6px;
+    bottom: 2px;
+    background-color: #e8c9a9;
+}
+
+.textContent {
+    position: relative;
+    z-index: 2;
+    background: linear-gradient(to right, #c39355, #e8c9a9, #c39355);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.arrowContainer {
+    display: flex;
+    justify-content: center;
+    margin: 5% auto 0;
+}
+  
+.bounceArrow {
+    animation: bounce 2s infinite ease-in-out;
+}
+  
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+  
+/* Media queries */
+/* Under 350px */
+@media screen and (max-width: 349px) {
+    .row {
+        width: 100%;
+        margin: 4% auto;
+    }
+    .description {
+        font-size: 1rem;
+        width: 90%;
+    }
+    .title {
+        font-size: 1.5rem;
+    }
+    .name {
+        font-size: 2rem;
+    }
+    .highlight {
+        height: 8px;
+        bottom: 2px;
+    }
+    .markedDescription .highlight {
+        height: 5px;
+        bottom: 1px;
+    }
+}
+  
+/* 350px - 450px */
+@media screen and (min-width: 350px) and (max-width: 450px) {
+    .row {
+        width: 90%;
+    }
+    .description {
+        font-size: 1.1rem;
+        width: 85%;
+    }
+    .title {
+        font-size: 1.7rem;
+    }
+    .name {
+        font-size: 2.2rem;
+    }
+    .highlight {
+        height: 9px;
+    }
+    .markedDescription .highlight {
+        height: 5px;
+    }
+}
+  
+/* 450px - 550px */
+@media screen and (min-width: 451px) and (max-width: 550px) {
+    .row {
+        width: 85%;
+    }
+    .description {
+        font-size: 1.2rem;
+        width: 80%;
+    }
+    .title {
+        font-size: 2.2rem;
+    }
+    .name {
+        font-size: 2.4rem;
+    }
+    .highlight {
+        height: 10px;
+    }
+    .markedDescription .highlight {
+        height: 6px;
+    }
+}
+  
+/* 550px - 650px */
+@media screen and (min-width: 551px) and (max-width: 650px) {
+    .row {
+        width: 80%;
+    }
+    .description {
+        font-size: 1.25rem;
+        width: 80%;
+    }
+    .title {
+        font-size: 2.3rem;
+    }
+    .name {
+        font-size: 2.5rem;
+    }
+    .highlight {
+        height: 10px;
+    }
+    .markedDescription .highlight {
+        height: 6px;
+    }
+}
+  
+/* 650px - 750px */
+@media screen and (min-width: 651px) and (max-width: 750px) {
+    .row {
+        width: 75%;
+    }
+    .description {
+        font-size: 1.3rem;
+        width: 78%;
+    }
+    .title {
+        font-size: 2.4rem;
+    }
+    .name {
+        font-size: 2.6rem;
+    }
+    .highlight {
+        height: 11px;
+    }
+    .markedDescription .highlight {
+        height: 6px;
+    }
+}
+  
+/* 750px - 850px */
+@media screen and (min-width: 751px) and (max-width: 850px) {
+    .row {
+        width: 70%;
+    }
+    .description {
+        font-size: 1.35rem;
+        width: 76%;
+    }
+    .title {
+        font-size: 2.45rem;
+    }
+    .name {
+        font-size: 2.65rem;
+    }
+    .highlight {
+        height: 11px;
+    }
+    .markedDescription .highlight {
+        height: 6px;
+    }
+}
+  
+/* 850px - 950px */
+@media screen and (min-width: 851px) and (max-width: 950px) {
+    .row {
+        width: 65%;
+    }
+    .description {
+        font-size: 1.37rem;
+        width: 75%;
+    }
+    .title {
+        font-size: 2.47rem;
+    }
+    .name {
+        font-size: 2.67rem;
+    }
+    .highlight {
+        height: 11px;
+    }
+    .markedDescription .highlight {
+        height: 6px;
+    }
+}
+  
+/* 950px - 1050px */
+@media screen and (min-width: 951px) and (max-width: 1050px) {
+    .row {
+        width: 60%;
+    }
+    .description {
+        font-size: 1.38rem;
+        width: 75%;
+    }
+    .title {
+        font-size: 2.48rem;
+    }
+    .name {
+        font-size: 2.68rem;
+    }
+    .highlight {
+        height: 12px;
+    }
+    .markedDescription .highlight {
+        height: 6px;
+    }
+}
+  
+/* 1050px - 1150px */
+@media screen and (min-width: 1051px) and (max-width: 1150px) {
+    .row {
+        width: 55%;
+    }
+    .description {
+        font-size: 1.39rem;
+        width: 75%;
+    }
+    .title {
+        font-size: 2.49rem;
+    }
+    .name {
+        font-size: 2.69rem;
+    }
+    .highlight {
+        height: 12px;
+    }
+    .markedDescription .highlight {
+        height: 6px;
+    }
+}
+  
+/* 1150px - 1250px */
+@media screen and (min-width: 1151px) and (max-width: 1250px) {
+    .row {
+        width: 50%;
+    }
+    .description {
+        font-size: 1.4rem;
+        width: 75%;
+    }
+    .title {
+        font-size: 2.5rem;
+    }
+    .name {
+        font-size: 2.7rem;
+    }
+    .highlight {
+        height: 12px;
+    }
+    .markedDescription .highlight {
+        height: 6px;
+    }
+}
+
