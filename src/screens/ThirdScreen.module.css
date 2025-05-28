@@ -26,16 +26,30 @@
   text-align: center;
   font-size: 2.2rem;
   font-weight: 800;
-  color: #8b6d47;
+  color: #6b4e2a;
   margin-bottom: 3rem;
-  text-shadow: 0 2px 4px rgba(255, 255, 255, 0.8), 0 4px 8px rgba(195, 147, 85, 0.2);
-  background: linear-gradient(135deg, #8b6d47, #c39355, #8b6d47);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  text-shadow: 
+    0 2px 4px rgba(255, 255, 255, 1),
+    0 4px 8px rgba(195, 147, 85, 0.3),
+    0 1px 0 rgba(255, 255, 255, 0.9),
+    0 -1px 0 rgba(139, 109, 71, 0.2);
   font-family: 'AssistantR', Arial, sans-serif;
   position: relative;
   z-index: 1;
+  letter-spacing: 0.5px;
+}
+
+.title::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #c39355, transparent);
+  border-radius: 2px;
+  box-shadow: 0 1px 2px rgba(195, 147, 85, 0.3);
 }
 
 .featuresGrid {
@@ -267,8 +281,14 @@
   }
   
   .title {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     margin-bottom: 1.5rem;
+  }
+  
+  .title::after {
+    width: 40px;
+    height: 2px;
+    bottom: -6px;
   }
   
   .featuresGrid {
@@ -283,11 +303,11 @@
   }
   
   .featureTitle {
-    font-size: 1.2rem; /* הגדלתי מ-1rem ל-1.2rem */
+    font-size: 1.2rem;
   }
   
   .featureDescription {
-    font-size: 0.9rem; /* הגדלתי מ-0.8rem ל-0.9rem */
+    font-size: 0.9rem;
   }
   
   .imagesGrid {
@@ -335,8 +355,14 @@
   }
   
   .title {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     margin-bottom: 1.8rem;
+  }
+  
+  .title::after {
+    width: 45px;
+    height: 2px;
+    bottom: -6px;
   }
   
   .featuresGrid {
@@ -351,11 +377,11 @@
   }
   
   .featureTitle {
-    font-size: 1.25rem; /* הגדלתי מ-1.1rem ל-1.25rem */
+    font-size: 1.25rem;
   }
   
   .featureDescription {
-    font-size: 0.95rem; /* הגדלתי מ-0.85rem ל-0.95rem */
+    font-size: 0.95rem;
   }
   
   .imagesGrid {
@@ -403,8 +429,14 @@
   }
   
   .title {
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     margin-bottom: 2rem;
+  }
+  
+  .title::after {
+    width: 50px;
+    height: 2.5px;
+    bottom: -7px;
   }
   
   .featuresGrid {
@@ -419,11 +451,11 @@
   }
   
   .featureTitle {
-    font-size: 1.3rem; /* הגדלתי מ-1.2rem ל-1.3rem */
+    font-size: 1.3rem;
   }
   
   .featureDescription {
-    font-size: 1rem; /* הגדלתי מ-0.9rem ל-1rem */
+    font-size: 1rem;
   }
   
   .imagesGrid {
@@ -471,8 +503,14 @@
   }
   
   .title {
-    font-size: 1.6rem;
+    font-size: 2rem;
     margin-bottom: 2.2rem;
+  }
+  
+  .title::after {
+    width: 52px;
+    height: 2.5px;
+    bottom: -7px;
   }
   
   .featuresGrid {
@@ -487,11 +525,11 @@
   }
   
   .featureTitle {
-    font-size: 1.35rem; /* הגדלתי מ-1.25rem ל-1.35rem */
+    font-size: 1.35rem;
   }
   
   .featureDescription {
-    font-size: 1rem; /* הגדלתי מ-0.92rem ל-1rem */
+    font-size: 1rem;
   }
   
   .imagesGrid {
@@ -539,8 +577,14 @@
   }
   
   .title {
-    font-size: 1.7rem;
+    font-size: 2.1rem;
     margin-bottom: 2.5rem;
+  }
+  
+  .title::after {
+    width: 55px;
+    height: 2.5px;
+    bottom: -7px;
   }
   
   .featuresGrid {
@@ -607,8 +651,14 @@
   }
   
   .title {
-    font-size: 1.8rem;
+    font-size: 2.15rem;
     margin-bottom: 2.7rem;
+  }
+  
+  .title::after {
+    width: 57px;
+    height: 2.5px;
+    bottom: -7px;
   }
   
   .featuresGrid {
@@ -675,8 +725,14 @@
   }
   
   .title {
-    font-size: 1.9rem;
+    font-size: 2.18rem;
     margin-bottom: 2.8rem;
+  }
+  
+  .title::after {
+    width: 58px;
+    height: 3px;
+    bottom: -8px;
   }
   
   .featuresGrid {
@@ -743,8 +799,14 @@
   }
   
   .title {
-    font-size: 2rem;
+    font-size: 2.2rem;
     margin-bottom: 2.9rem;
+  }
+  
+  .title::after {
+    width: 60px;
+    height: 3px;
+    bottom: -8px;
   }
   
   .featuresGrid {
@@ -811,8 +873,14 @@
   }
   
   .title {
-    font-size: 2.1rem;
+    font-size: 2.2rem;
     margin-bottom: 3rem;
+  }
+  
+  .title::after {
+    width: 60px;
+    height: 3px;
+    bottom: -8px;
   }
   
   .featuresGrid {
@@ -881,6 +949,12 @@
   .title {
     font-size: 2.2rem;
     margin-bottom: 3rem;
+  }
+  
+  .title::after {
+    width: 60px;
+    height: 3px;
+    bottom: -8px;
   }
   
   .featuresGrid {
