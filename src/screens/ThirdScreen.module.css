@@ -283,11 +283,11 @@
   }
   
   .featureTitle {
-    font-size: 1rem;
+    font-size: 1.2rem; /* הגדלתי מ-1rem ל-1.2rem */
   }
   
   .featureDescription {
-    font-size: 0.8rem;
+    font-size: 0.9rem; /* הגדלתי מ-0.8rem ל-0.9rem */
   }
   
   .imagesGrid {
@@ -351,11 +351,11 @@
   }
   
   .featureTitle {
-    font-size: 1.1rem;
+    font-size: 1.25rem; /* הגדלתי מ-1.1rem ל-1.25rem */
   }
   
   .featureDescription {
-    font-size: 0.85rem;
+    font-size: 0.95rem; /* הגדלתי מ-0.85rem ל-0.95rem */
   }
   
   .imagesGrid {
@@ -419,11 +419,11 @@
   }
   
   .featureTitle {
-    font-size: 1.2rem;
+    font-size: 1.3rem; /* הגדלתי מ-1.2rem ל-1.3rem */
   }
   
   .featureDescription {
-    font-size: 0.9rem;
+    font-size: 1rem; /* הגדלתי מ-0.9rem ל-1rem */
   }
   
   .imagesGrid {
@@ -487,11 +487,11 @@
   }
   
   .featureTitle {
-    font-size: 1.25rem;
+    font-size: 1.35rem; /* הגדלתי מ-1.25rem ל-1.35rem */
   }
   
   .featureDescription {
-    font-size: 0.92rem;
+    font-size: 1rem; /* הגדלתי מ-0.92rem ל-1rem */
   }
   
   .imagesGrid {

@@ -173,8 +173,10 @@
   font-size: 1.1rem;
   line-height: 1.6;
   font-weight: 300;
+  width:90%;
+  margin:2% auto;
   font-family: "AssistantR";
-  margin-bottom: 15px;
+
   color: #444;
 }
 
@@ -319,7 +321,8 @@
   max-width: 800px;
   direction: rtl;
   text-align: center;
-  margin: 2% auto;
+  width:90%;
+  margin:2% auto;
   font-family: "AssistantR";
   font-weight: 300;
 }
