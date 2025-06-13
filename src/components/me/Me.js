@@ -1,11 +1,12 @@
 import React from 'react';
 import styles from './Me.module.css';
-import batel from "../../images/בתאל אלמקייס תמונה ראשית.png"
+import batel from "../../images/בתאל אלמקייס תמונת פרופיל.jpg"
 import bateldictionary from ".././../images/בתאל אלמקייס יומן.png"
 import Works from '../recommends/Works';
 import Recommendations from '../recommends/Recommends';
 import Syllabus from '../Sillabus/Sillabus';
 import ThirdScreen from '../../screens/ThirdScreen';
+import NewSyllabus from '../Sillabus/NewSillabus';
 const AboutMeComponent = () => {
   return (
     <>
@@ -14,15 +15,15 @@ const AboutMeComponent = () => {
         <div className={styles.container}>
           <div className={styles.imageContainer}>
             {/* כאן יבוא התמונה, לדוגמה: */}
-            <img src={batel} alt="בתאל אלמקייס" className={styles.image} />
+            <img src={batel} alt="בתאל קוסמטיקס" className={styles.image} />
           </div>
           <div className={styles.content}>
-            <h1 className={styles.title}>בתאל אלמקייס</h1>
-            <div className={styles.subtitle}>"כל מה שהיה לי בהתחלה היה רק חלום ורצון"</div>
+            <h1 className={styles.title}>בתאל קומסטיקס</h1>
+            <div className={styles.subtitle}>"כל מה שהיה לי בהתחלה היה חלום וכוח רצון"</div>
             <p className={styles.description}>
-              מהילדות ידעתי שאני הולכת להתעסק בתחום הביוטי. לא כיוונתי דווקא לתחום הציפורניים ואפילו - 
-              <span className={styles.goldText}> לא עברתי קורס בתחום</span> - למדתי את הכל בכוחות עצמי. 
-              צברתי את הידע שלי בעזרת תרגול אינסופי ונחישות.
+              מהילדות ידעתי שאני הולכת להתעסק בתחום הביוטי. לא כיוונתי דווקא לתחום הציפורניים  - 
+        
+       
             </p>
             <p className={styles.description}>
               קפצתי למים העמוקים ולמדתי לשחות מהר מאוד. עד היום עברו דרכי אלפי לקוחות מרוצות שחוזרות אליי שוב ושוב. 
@@ -46,7 +47,7 @@ const AboutMeComponent = () => {
         <img src={bateldictionary} alt="בתאל אלמקייס" className={styles.imageCentered} />
         <div className={styles.centeredSubtitle}>שיצאו ממני ככה:</div>
     <Works/>
-         <div className={styles.centeredSubtitle}>ואלו ההודעות אני מקבלת מהן</div>
+         <div className={styles.centeredSubtitle}>וזה חלק קטן מהאהבה שלהן חזרה</div>
     <Recommendations/>
         <p className={styles.centeredDescription}>
 והיום - אחרי אינספור בקשות, החלטתי לקחת את כל הידע שצברתי ולהעביר אותו הלאה בצורה הכי מקיפה שיש!
@@ -54,6 +55,7 @@ const AboutMeComponent = () => {
        <div className={styles.centeredSubtitle}>אז תחזיקי חזק.. ככה זה הולך לעבוד:</div>
        
           <Syllabus/>
+          <NewSyllabus/>
         <ThirdScreen/>
 
   

@@ -49,13 +49,13 @@ const FirstScreen = () => {
         <div className={styles.glowingBorder} />
         <div className={styles.decorBorder}>
           <div className={styles.innerContent}>
-            <h1 className={styles.mainTitle}>BATEL ELMAKAYES</h1>
+            <h1 className={styles.mainTitle}>BATEL COSMETICS</h1>
             <div className={styles.separator}>
               <div className={styles.decorLine} />
               <div className={styles.decorDiamond} />
               <div className={styles.decorLine} />
             </div>
-            <p className={styles.subTitle}>דלת הכניסה שלך לתחום הביוטי - קורס לק ג׳ל פרימיום</p>
+            <p className={styles.subTitle}>דלת הכניסה שלך לעולם הביוטי</p>
           </div>
           <div className={styles.arrowContainer}>
             <ChevronDown className={styles.arrow} size={38} strokeWidth={1.5}/>

@@ -7,7 +7,7 @@ import kitt2 from "../videos/ערכה בתאל אלמקייס 2.mp4"
 const ThirdScreen = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.title}>מיותר לציין שהקורס כולל</div>
+      <div className={styles.title}>הקורס כולל</div>
       
       <div className={styles.featuresGrid}>
         {/* יחס אישי */}
@@ -19,7 +19,7 @@ const ThirdScreen = () => {
           </div>
           <h3 className={styles.featureTitle}>יחס אישי</h3>
           <p className={styles.featureDescription}>
-            הקורס הוא אחת על אחת ואני איתך בכל שלב ושלב לאורך כל 12 המפגשים וגם אחריהם
+            הקורס הוא אחת על אחת ואני איתך בכל שלב ושלב לאורך כל 10 המפגשים וגם אחריהם
           </p>
         </div>
 
@@ -45,9 +45,9 @@ const ThirdScreen = () => {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
             </svg>
           </div>
-          <h2 className={styles.kitTitle}>ערכה אישית</h2>
+          <h2 className={styles.kitTitle}>ערכה אישית בשווי של עד 3000 שקלים</h2>
           <p className={styles.kitDescription}>
-            כל תלמידה שיוצאת ממני מקבלת את כל החומרים שנחוצים לה כדי להתחיל לקבל לקוחות
+           בערכה תקבלי את כל הכלים הנחוצים להתחלת עבודה מיידית
           </p>
           
           {/* תמונות הערכה */}
@@ -70,40 +70,13 @@ const ThirdScreen = () => {
               </div>
             </div>
             
-            {/* ריבוע ריק 2 */}
-            <div className={styles.imageCard}>
-              <div className={styles.imagePlaceholder}>
-                   <video 
-                  src={kitt2} 
-                  controls
-                  style={{
-                    width: '100%',
-                    height: '100%',
-                    objectFit: 'cover',
-                    borderRadius: '15px'
-                  }}
-                />
-              </div>
-            </div>
-            
-            {/* ריבוע ריק 3 */}
-            <div className={styles.imageCard}>
-              <div className={styles.imagePlaceholder}>
-                  <video 
-                  src={kitt} 
-                  controls
-                  style={{
-                    width: '100%',
-                    height: '100%',
-                    objectFit: 'cover',
-                    borderRadius: '15px'
-                  }}
-                />
-              </div>
-            </div>
+ 
+    
           </div>
         </div>
+     
       </div>
+        
     </div>
   )
 }

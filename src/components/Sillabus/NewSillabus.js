@@ -9,7 +9,7 @@ import {
 import styles from './Sillabus.module.css';
 import Button from '../button/Button';
 
-const Syllabus = () => {
+const NewSyllabus = () => {
  const [isExpanded, setIsExpanded] = useState(false);
 
  const toggleExpanded = () => {
@@ -166,13 +166,18 @@ const Syllabus = () => {
  return (
    <div className={styles.syllabusContainer}>
      <div className={styles.header}>
-       <h1 className={styles.mainTitle}>קורס בניית ציפורניים באקריל בשיטה המנצחת שלי</h1>
+       <h1 className={styles.mainTitle}>מסלול בתאל קומסטיקס</h1>
+       <h2 className={styles.subtitle}>חתימה של מצויינות - המסלול שמכתיב את הרמה !</h2>
+   <h2 className={styles.subtitle}></h2>
 
        <div className={styles.courseInfo}>
-         <span>10 מפגשים</span>
+       <span>4 תחומים שונים : בנייה באקריל <br/> לק ג׳ל ברגליים <br/> עיצוב ושיקום הגבות בחוט ומספריים <br/> הסרת שיער בשעווה לכל חלקי הגוף  </span>
+         <span>13 מפגשים</span>
          <span>3 שעות כל מפגש</span>
          <span>לימוד עיוני + פרקטיקה מעשית</span>
          <span>תעודת הסמכה</span>
+          <span>ערכת פרימיום בשווי עד 4000 שקלים</span>
+                
        </div>
        
        <div className={styles.expandButtonContainer}>
@@ -239,4 +244,4 @@ const Syllabus = () => {
  );
 };
 
-export default Syllabus;
+export default NewSyllabus;
