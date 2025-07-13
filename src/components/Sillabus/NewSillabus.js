@@ -149,16 +149,63 @@ const NewSyllabus = () => {
    {
      number: 10,
      icon: <Trophy className={styles.sessionIcon} />,
-     title: "מבחן מעשי ותיאורטי ומתן תעודה",
+     title: "מבחן מעשי ותיאורטי ומתן תעודה - בנייה באקריל",
      quote: "כל סוף הוא התחלה חדשה - עכשיו את מוכנה לעולם המקצועי",
      content: [
        { text: "בחינה עיונית על הנושאים שלמדו", icon: <BookOpen className={styles.contentIcon} /> },
        { text: "אנטומיה, היגיינה, בטיחות, חומרי בנייה", icon: <Brain className={styles.contentIcon} /> },
-
        { text: "פרויקט מלא: הכנת ציפורן מלאה עד שלב הגימור", icon: <Layers className={styles.contentIcon} /> },
        { text: "בחירת גימור מתאים, בעיית צביעה או בחירת תיקון בצבע", icon: <Palette className={styles.contentIcon} /> },
        { text: "פרנץ' לפי הבחירה", icon: <Star className={styles.contentIcon} /> },
-              { text: "חלוקת תעודת הסמכה", icon: <Star className={styles.contentIcon} /> }
+       { text: "חלוקת תעודת הסמכה", icon: <Star className={styles.contentIcon} /> }
+     ]
+   },
+   {
+     number: 11,
+     icon: <UserCheck className={styles.sessionIcon} />,
+     title: "יסודות תיאורטיים וכלים לעיצוב גבות",
+     quote: "הגבות הן מסגרת הפנים - הן קובעות את כל המבט",
+     content: [
+       { text: "מבוא לעיצוב גבות: חשיבות הגבות במסגרת הפנים", icon: <Eye className={styles.contentIcon} /> },
+       { text: "טרנדים בעיצוב גבות בעבר ובהווה", icon: <Sparkles className={styles.contentIcon} /> },
+       { text: "התאמת עיצוב הגבה למבנה הפנים והעין", icon: <Target className={styles.contentIcon} /> },
+       { text: "הסבר על מבנה השערה והגבה", icon: <Brain className={styles.contentIcon} /> },
+       { text: "נקודות המפתח בעיצוב גבות (תחילת הגבה, קשת, סיום)", icon: <Ruler className={styles.contentIcon} /> },
+       { text: "מדידות סימטריה נכונות עם חוט מדידה או סרגל ייעודי", icon: <Focus className={styles.contentIcon} /> },
+       { text: "היגיינה ובטיחות: סטריליזציה של ציוד", icon: <Shield className={styles.contentIcon} /> },
+       { text: "כלים וחומרים: חוטים, פינצטות, מספריים ואביזרי עזר", icon: <Wrench className={styles.contentIcon} /> }
+     ]
+   },
+   {
+     number: 12,
+     icon: <Scissors className={styles.sessionIcon} />,
+     title: "לימוד וטכניקות עיצוב בחוט ופינצטה",
+     quote: "דיוק וטכניקה נכונה הם המפתח לעיצוב מושלם",
+     content: [
+       { text: "טכניקת עיצוב גבות בחוט: יתרונות החוט לעומת פינצטה", icon: <Layers className={styles.contentIcon} /> },
+       { text: "כיצד להכין את החוט לעבודה ואחיזת חוט נכונה", icon: <Target className={styles.contentIcon} /> },
+       { text: "תנועת מספריים באצבעות ותרגול תנועות בסיס", icon: <Repeat className={styles.contentIcon} /> },
+       { text: "טכניקת פינצטה נכונה: עבודה מדויקת ונקודתית", icon: <Focus className={styles.contentIcon} /> },
+       { text: "איך להימנע משבירת שערות ועקירת זקיקים", icon: <Shield className={styles.contentIcon} /> },
+       { text: "עבודה עם מספריים לעיצוב וסידור גבה", icon: <Scissors className={styles.contentIcon} /> },
+       { text: "גזירת שערות ארוכות בצורה נכונה לשמירה על מראה טבעי", icon: <CheckCircle className={styles.contentIcon} /> },
+       { text: "תרגול מעשי על עור סינתטי וחוט באוויר", icon: <Lightbulb className={styles.contentIcon} /> }
+     ]
+   },
+   {
+     number: 13,
+     icon: <Award className={styles.sessionIcon} />,
+     title: "תרגול מעשי וסיכום עיצוב גבות",
+     quote: "התרגול המושלם הוא שמביא לתוצאות מקצועיות",
+     content: [
+       { text: "שילוב הטכניקות בעיצוב אחד: סדר עבודה נכון", icon: <Layers className={styles.contentIcon} /> },
+       { text: "חיטוי ➔ מדידה ➔ חוט ➔ פינצטה ➔ מספריים ➔ ניקוי והרגעה", icon: <Repeat className={styles.contentIcon} /> },
+       { text: "תרגול מעשי מלא על מודל עם ליווי צמוד", icon: <Users className={styles.contentIcon} /> },
+       { text: "עבודה עצמאית בפיקוח המדריכה", icon: <UserCheck className={styles.contentIcon} /> },
+       { text: "טיפול לאחר עיצוב: חיטוי והרגעת העור", icon: <Heart className={styles.contentIcon} /> },
+       { text: "המלצות לתכשירים מרגיעים ושמירה על תוצאות", icon: <Sparkles className={styles.contentIcon} /> },
+       { text: "טיפים לכניסה לשוק העבודה והצעות מחיר", icon: <Trophy className={styles.contentIcon} /> },
+       { text: "הענקת תעודות לסיום הקורס", icon: <Award className={styles.contentIcon} /> }
      ]
    }
  ];

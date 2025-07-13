@@ -1,8 +1,8 @@
 import styles from "./ThirdScreen.module.css"
 
-import kitt from "../videos/ערכה בתאל אלמקייס.mp4"
-import kitt1 from "../videos/ערכה בתאל אלמקייס 1.mp4"
-import kitt2 from "../videos/ערכה בתאל אלמקייס 2.mp4"
+
+import kitt1 from "../videos/בתאל אלמקייס ערכה.mp4"
+
 
 const ThirdScreen = () => {
   return (

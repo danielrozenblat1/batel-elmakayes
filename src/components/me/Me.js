@@ -7,6 +7,7 @@ import Recommendations from '../recommends/Recommends';
 import Syllabus from '../Sillabus/Sillabus';
 import ThirdScreen from '../../screens/ThirdScreen';
 import NewSyllabus from '../Sillabus/NewSillabus';
+import GabotSillabus from '../Sillabus/GabotSillabus';
 const AboutMeComponent = () => {
   return (
     <>
@@ -56,6 +57,7 @@ const AboutMeComponent = () => {
        
           <Syllabus/>
           <NewSyllabus/>
+          <GabotSillabus/>
         <ThirdScreen/>
 
   
