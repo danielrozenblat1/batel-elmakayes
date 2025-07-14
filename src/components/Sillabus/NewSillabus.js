@@ -281,11 +281,12 @@ const NewSyllabus = () => {
            </div>
            
          ))}
-         
+        
        </div>
        
+        
      )}
-     
+  
    
    </div>
  );

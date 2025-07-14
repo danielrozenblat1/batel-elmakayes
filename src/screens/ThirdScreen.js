@@ -2,6 +2,7 @@ import styles from "./ThirdScreen.module.css"
 
 
 import kitt1 from "../videos/בתאל אלמקייס ערכה.mp4"
+import Button from "../components/button/Button"
 
 
 const ThirdScreen = () => {
@@ -76,7 +77,7 @@ const ThirdScreen = () => {
         </div>
      
       </div>
-        
+        <Button text="בתאל,בואי נדבר!"/>
     </div>
   )
 }

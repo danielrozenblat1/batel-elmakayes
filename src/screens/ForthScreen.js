@@ -1,3 +1,4 @@
+import Button from "../components/button/Button"
 import FAQItem from "../components/questions/Questions"
 import styles from "./ForthScreen.module.css"
 
@@ -29,7 +30,7 @@ const ForthScreen=()=>{
         answer="מבאס ממש לשמוע שזו החוויה שלך מהתחום - אני אשמח לשמוע ממך מה ביאס אותך ומה את מחפשת בקורס - מה שאני כן יכולה לומר הוא שאני כאן! אני כאן איתך במהלך הקורס, אני כאן לכל שאלה אחרי הקורס ולכל התייעצות שיש לך"
     />
 
-
+ <Button text="בתאל,בואי נדבר!"/>
     </>
 }
 
