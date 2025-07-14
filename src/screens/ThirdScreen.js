@@ -45,7 +45,7 @@ const ThirdScreen = () => {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
             </svg>
           </div>
-          <h2 className={styles.kitTitle}>ערכה אישית בשווי של עד 3000 שקלים</h2>
+          <h2 className={styles.kitTitle}>ערכה אישית בהתאם למסלול</h2>
           <p className={styles.kitDescription}>
            בערכה תקבלי את כל הכלים הנחוצים להתחלת עבודה מיידית
           </p>

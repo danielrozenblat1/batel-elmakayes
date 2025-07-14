@@ -173,6 +173,7 @@ const Syllabus = () => {
          <span>3 שעות כל מפגש</span>
          <span>לימוד עיוני + פרקטיקה מעשית</span>
          <span>תעודת הסמכה</span>
+           <span>ערכה בסיסית בשווי של עד 3000 שקלים</span>
        </div>
        
        <div className={styles.expandButtonContainer}>

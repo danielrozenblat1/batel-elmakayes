@@ -57,7 +57,7 @@ const AboutMeComponent = () => {
        
           <Syllabus/>
           <NewSyllabus/>
-          <GabotSillabus/>
+  
         <ThirdScreen/>
 
   
